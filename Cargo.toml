@@ -1,0 +1,19 @@
+[package]
+name = "discord-presence-rs"
+version = "1.0.0"
+edition = "2024"
+authors = ["Mert Bölükbaşı <kaizenium@kaizeniumfoundation.com>"]
+readme = "README.md"
+license = "MIT"
+keywords = ["discord", "presence", "rich-presence"]
+documentation = "https://docs.rs/discord-presence-rs"
+description = "A Rust library for creating Discord Rich Presence"
+repository = "https://github.com/mertbolukbasi/discord-presence-rs"
+
+[dependencies]
+
+serde = { version = "1.0", features = ["derive"] }
+serde_repr = "0.1.20"
+serde_json = "1.0"
+thiserror = "1.0"
+uuid = { version = "1.8", features = ["v4", "serde"] }
