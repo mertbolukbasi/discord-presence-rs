@@ -5,7 +5,7 @@ use std::io::{Read, Write};
 use uuid::Uuid;
 
 /// A trait for Inter-Process Communication (IPC).
-pub trait Ipc: Read + Write {
+pub trait Ipc: Read + Write + Send + Sync {
     /// Connects to the IPC server.
     fn connect() -> Result<Self, Error>
     where
